@@ -24,7 +24,6 @@
     "prisma": "^3.6.0",
     "reflect-metadata": "^0.1.13",
     "resolvers": "^1.0.0",
-    "token": "^0.1.0",
     "ts-node": "^10.4.0",
     "ts-node-dev": "^1.1.8",
     "type-graphql": "^1.1.1",
