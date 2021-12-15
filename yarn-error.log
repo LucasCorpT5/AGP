@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add TypeGraphQLS
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add @types/graphql-fields -D
 
 PATH: 
   /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,17 +14,8 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/TypeGraphQLS: Not found
-      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:67031:18)
-      at Request.self.callback (/usr/share/yarn/lib/cli.js:140885:22)
-      at Request.emit (events.js:400:28)
-      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141857:10)
-      at Request.emit (events.js:400:28)
-      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141779:12)
-      at Object.onceWrapper (events.js:519:28)
-      at IncomingMessage.emit (events.js:412:35)
-      at endReadableNT (internal/streams/readable.js:1334:12)
-      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:71:26)
 
 npm manifest: 
   {
@@ -48,7 +39,6 @@ npm manifest:
     "dependencies": {
       "@types/uuid": "^8.3.3",
       "class-validator": "^0.13.2",
-      "graphql": "^16.1.0",
       "graphql-fields": "^2.0.3",
       "prisma": "^3.6.0",
       "reflect-metadata": "^0.1.13",
