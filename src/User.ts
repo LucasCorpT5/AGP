@@ -6,6 +6,9 @@ export class User {
     @Field((type) => ID)
     id: string;
 
+    @Field((type) => String)
+    name: string;
+
     @Field()
     email: string;
 
@@ -14,4 +17,16 @@ export class User {
 
     @Field((type) => Date)
     createdAt: Date;
+}
+
+@ObjectType()
+export class UserLog {
+    @Field((type) => ID)
+    id: string
+
+    @Field((type) => String)
+    name: string
+
+    @Field((type) => String)
+    email: string
 }

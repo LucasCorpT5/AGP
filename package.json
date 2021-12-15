@@ -9,6 +9,7 @@
     "@types/graphql": "^14.5.0",
     "apollo-server": "^3.5.0",
     "bcryptjs": "^2.4.3",
+    "jest": "^27.4.5",
     "typegraphql-prisma": "^0.18.2",
     "uuid": "^8.3.2"
   },
