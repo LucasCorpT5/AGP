@@ -1,4 +1,4 @@
-import { Arg, Ctx, Field, InputType, Query, Resolver } from "type-graphql";
+import { Arg, Ctx, Field, InputType, Query, Resolver, Mutation } from "type-graphql";
 import { User } from "./User"
 import { Context } from "./context";
 
@@ -33,5 +33,11 @@ export class UserResolver {
 
             return user;
         }
+    }
+
+
+    @Mutation((returns) => User)
+    async singUp(@Arg("data") data: UserInputData, @Ctx() ctx: Context): Promise<User> {
+        return ctx.prisma.users.create({ data });
     }
 }
