@@ -2227,6 +2227,11 @@ resolve@1.20.0, resolve@^1.0.0, resolve@^1.10.0:
     is-core-module "^2.2.0"
     path-parse "^1.0.6"
 
+resolvers@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/resolvers/-/resolvers-1.0.0.tgz#c1247b0640455acc6365b4166c614f36038d1c82"
+  integrity sha512-y6b6h0nnSW/fkHZHdpLb6/zjr8ojk2cF8ysmG1X/nMN1EYttCBBLugM6DomegliA4mlyA9KOyNMvTzfFdV9bXg==
+
 retry@0.13.1, retry@^0.13.1:
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/retry/-/retry-0.13.1.tgz#185b1587acf67919d63b357349e03537b2484658"
@@ -2577,6 +2582,11 @@ toidentifier@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.1.tgz#3be34321a88a820ed1bd80dfaa33e479fbb8dd35"
   integrity sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==
+
+token@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/token/-/token-0.1.0.tgz#b2d96487582f0d9da231c361adac36b5a26c73c2"
+  integrity sha1-stlkh1gvDZ2iMcNhraw2taJsc8I=
 
 tr46@~0.0.3:
   version "0.0.3"

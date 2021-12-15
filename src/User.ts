@@ -7,7 +7,6 @@ export class User {
     id: string;
 
     @Field()
-    @IsEmail()
     email: string;
 
     @Field((type) => String)
