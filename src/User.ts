@@ -25,7 +25,7 @@ export class UserLog {
     id: string
 
     @Field((type) => String)
-    name: string
+    password: string
 
     @Field((type) => String)
     email: string

@@ -64,7 +64,7 @@ export class UserResolver {
     }
 
     @Mutation((returns) => UserWithToken)
-    async Login(@Arg("data") data: UserInputDataLogin, @Ctx() ctx: Context): Promise<UserLog & { token: string } | null> {
+    async login(@Arg("data") data: UserInputDataLogin, @Ctx() ctx: Context): Promise<{ user: UserLog, token: string } | null> {
         const user = await ctx.prisma.users.findUnique({
             where: {
                 email: data.email
@@ -86,6 +86,6 @@ export class UserResolver {
             data: { token: tokenCode, user: { connect: { id: user.id } } }
         });
 
-        return { ...user, token: token.token };
+        return { user, token: token.token };
     }
 }
