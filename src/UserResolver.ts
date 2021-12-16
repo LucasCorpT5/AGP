@@ -15,6 +15,7 @@ class UserInputDataSing {
     @Field()
     password: string;
 }
+
 @InputType()
 class UserInputDataLogin {
     @Field()
@@ -53,9 +54,9 @@ export class UserResolver {
             const { user } = dbToken;
 
             return user;
+
         }
     }
-
 
     @Mutation((returns) => User)
     async singUp(@Arg("data") data: UserInputDataSing, @Ctx() ctx: Context): Promise<User> {
