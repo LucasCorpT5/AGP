@@ -29,4 +29,10 @@ export class UserLog {
 
     @Field((type) => String)
     email: string
+
+    @Field((type) => Date)
+    createdAt: Date
+
+    @Field((type) => String)
+    name: string;
 }

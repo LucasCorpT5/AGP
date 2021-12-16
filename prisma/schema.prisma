@@ -25,6 +25,7 @@ model Tokens {
 
 model UsersLog {
   id        String   @id @default(cuid())
+  name      String
   email     String
   password  String
   createdAt DateTime @default(now())
